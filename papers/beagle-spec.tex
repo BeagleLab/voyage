@@ -53,6 +53,66 @@ the technical specifications underlying Beagle.
 [Motivate Beagle. Introduce problems. Open Research. Citation graph. Competitors.
 Partners. Chrome Extension. Data storage. User interaction. Encrytion. Future ]
 
+\section{Front Ends}
+\subsection{Chrome Extension}
+
+Beagle is mainly realised as a Chrome extension. The extension loads a browserify
+bundled javascript file. This file is the concatination of the the node.js
+modules which are specified by the user; it also contains the React templates used
+to automatically generate a siderbar and various modals which make up the UI for
+the extension.
+
+\subsubsection{Components}
+\begin{itemize}
+  \item Author Profile
+  \item Publication Graph
+  \item Tags
+  \item Citation
+  \item Saved papers
+  \item Annotations
+  \item Journal information
+  \item Paper information
+  \item Notes
+\end{itemize}
+
+\subsection{Standalone App}
+
+Beagle will be able to pass on PDFs and web snippets via email to other users.
+It will also be able to store PDFs and display them to users who share them with
+other users.  % Possibly a copyright violation?
+
+
+
+\section{Data Storage}
+
+Beagle will store publicly citation data; data about viewed articles; data about authors;
+publication graph data. It will also have a node available for accessing and storing
+encrypted user data and annotations in a peer-to-peer distributed file system,
+allowing for maximal uptime and decentralization of storage costs. Users can share
+directly via their own node with other uses, bypassing the central storage, if
+they wish, although all data sent will be hashed.
+
+Some data will be optionally encrypted. For instance, tags on paper will have
+the option of being public, semi-private (available to user groups), or private.
+This allows Beagle to use tags to deduce contents of papers, or related papers.
+
+% Open questions: Can we store pdf data if users upload it or use our system?
+% If we can, that makes NLP for paper comparison much easier.
+
+Encrypted data stored on a p2p network instead of in a data silo has several
+distinct advantages; most namely, that the user is not dependant on a silo for
+continued access to their data. The ensures the uptime of Beagle, regardless of
+whether it is under active development or maintainence.
+
+\section{User Sign On}
+
+Users will sign on using 2 factor authentication; either through their email, or
+through their phones. Their accounts will be linked to their email accounts; when
+they log in, they will look for the new token in their email accounts, which can
+be used on a one-time basis. Otherwise, their data is stored in their cookies
+and in their browser.
+
+
 \section{Acknowledgements}
 
 This work has been supported by a MetaKnowledge Grant and by MIT.

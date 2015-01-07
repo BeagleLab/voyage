@@ -104,14 +104,34 @@ distinct advantages; most namely, that the user is not dependant on a silo for
 continued access to their data. The ensures the uptime of Beagle, regardless of
 whether it is under active development or maintainence.
 
-\section{User Sign On}
+\section{User Authentication}
 
-Users will sign on using 2 factor authentication; either through their email, or
-through their phones. Their accounts will be linked to their email accounts; when
-they log in, they will look for the new token in their email accounts, which can
-be used on a one-time basis. Otherwise, their data is stored in their cookies
-and in their browser.
+Users will register and sign on to the platform using the same process: two step authentication.
+This is a more secure process than using a password, either server-side or client-side. %Cite studies
+This has an added benefit of allowing storage of a user's information before they
+sign on to the site.
 
+When a user loads the extension or the web app, they will be allowed to access some
+functionality without needing to log in. For instance, paper metrics, paper
+metadata, and public tags. However, upon trying to interact with the paper by creating
+annotations, emailing to a colleague, and so on, they will be presented with a
+log in or sign up option; both will present a single input box for the user's
+email account. Upon submit, the server will send a key to the user's inbox that
+expires within 24 hours and can be used on a one-time basis to store a cookie in
+the user's browser, thus signalling that they are authenticated. Their email account
+will be hashed and used as their ID.
+
+Users will be able to share annotations privately with other users by emailing the
+intended recipients directly with either a PDF snippet or all of their annotations.
+The new user - if they do not have an account - will be able to access these
+annotations immediately by either clicking a link with the instance hash on the end
+which shows that they got it from their email accounts, or by logging in.
+
+% Perhaps the instance hash for that paper should just be the user's hash, actually.
+% That would allow people to sign in and still see their annotations needing extra
+% syncing. On the other hand, it would posisbly pose a security risk, if I know
+% another user's hash, and it doesn't explain how we would deal with multiple
+% shares.
 
 \section{Acknowledgements}
 

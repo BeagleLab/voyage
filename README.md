@@ -2,7 +2,7 @@
 
 Planning for the Beagle Project
 
-**This is an empty repository. All content is present in the [Issues](https://github.com/BeagleLab/voyage/issues).**
+The majority of discussion happens in the [Issues](https://github.com/BeagleLab/voyage/issues). Some of that is funnelled into the white paper for this project, built here.
 
 ## Waffle (Trello-like) Issue Boards
 

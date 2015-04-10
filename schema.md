@@ -1,7 +1,7 @@
 Database Schema
 ===============
 
-# Highlighted  Object
+### Highlighted  Object
 
 ```
 {

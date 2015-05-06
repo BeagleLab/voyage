@@ -1,6 +1,18 @@
 Database Schema
 ===============
 
+This is a schema for the database. Feel free to edit it. All data should be dummy data. To update the table of contents automatically, use [doctoc](https://github.com/thlorenz/doctoc) and run `doctoc schema.md` from within this repo. 
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Database Schema](#database-schema)
+    - [Paper](#paper)
+    - [Highlight](#highlight)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ### Paper
 
 ```json
